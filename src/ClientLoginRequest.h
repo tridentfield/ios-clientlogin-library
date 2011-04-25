@@ -30,9 +30,9 @@
 @property (nonatomic, assign, readonly) NSMutableDictionary *token;
 
 + (ClientLoginRequest *) createWithEMail:(NSString *)email
-                             Passwd:(NSString *)passwd
-                             Source:(NSString *)source
-                             Delegate:(id<ClientLoginRequestDelegate>) delegate;
+                             passwd:(NSString *)passwd
+                             source:(NSString *)source
+                             delegate:(id<ClientLoginRequestDelegate>) delegate;
 
 - (void) login;
 @end

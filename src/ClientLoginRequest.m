@@ -19,9 +19,9 @@ static const NSTimeInterval timeoutInterval = 60.0;
 
 #pragma static methods
 + (ClientLoginRequest *)createWithEMail:(NSString *)email
-                            Passwd:(NSString *)passwd
-                            Source:(NSString *)source
-                            Delegate:(id<ClientLoginRequestDelegate>) delegate
+                            passwd:(NSString *)passwd
+                            source:(NSString *)source
+                            delegate:(id<ClientLoginRequestDelegate>) delegate
 {
     ClientLoginRequest *request = [[[ClientLoginRequest alloc] init] autorelease];
     request.connection = nil;
